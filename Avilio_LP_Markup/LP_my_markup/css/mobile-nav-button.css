@@ -1,0 +1,70 @@
+.mobile-nav-button {
+
+	/*reset for button*/
+
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background: transparent;
+
+	/*nav icon styles*/
+
+	position: relative;
+	z-index: 999;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 30px;
+}
+
+@media (max-width: 992px){
+	.mobile-nav-button {
+		display: flex;
+	}
+}
+
+.mobile-nav-button__icon {
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 5px;
+	background-color: #000;
+}
+
+.mobile-nav-button__icon::after, .mobile-nav-button__icon::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 5px;
+	background-color: #000;
+	transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon::before {
+	left: 0;
+	top: -10px;
+}
+
+.mobile-nav-button__icon::after {
+	left: 0;
+	top: 10px;
+}
+
+.mobile-nav-button__icon.active {
+	background-color: transparent;
+}
+
+.mobile-nav-button__icon.active::before {
+	transform: rotate(45deg);
+	top: 0;
+	transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;;
+}
+
+.mobile-nav-button__icon.active::after {
+	transform: rotate(-45deg);
+	top: 0;
+	transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;;
+}
+

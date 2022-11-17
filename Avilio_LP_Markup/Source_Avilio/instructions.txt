@@ -1,1 +1,0 @@
-cd Desktop/; mkdir webproject; cd webproject; touch index.html; touch style.css

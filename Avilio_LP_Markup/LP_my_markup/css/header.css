@@ -1,0 +1,293 @@
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: solid #D6D6D6 1px;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+}
+
+.header-nav {
+    margin-left: 20px;
+}
+
+.header-login {
+    margin-left: 30px;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav li + li{
+    margin-left: 70px;
+
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0px;
+    background: url(../img/BG.jpg) no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+
+.fyw {
+    margin-top: 50px;
+}
+
+.fyw, .start-trial {
+    display: inline-block;
+    padding: 20px 50px;
+    color: #fff !important;
+    background-color: #01996D;
+    border-radius: 4px;
+}
+
+.fyw:hover {
+    color: #fff;
+    opacity: 50%;
+    transition: all 0.5s ease ;
+}
+
+.hero-items {
+    max-width: 440px;
+}
+
+.hero-items p {
+    margin-top: 30px !important; 
+}
+
+.signin {
+    margin-right: 30px;
+}
+
+/* CONTENT */
+
+.content {
+    margin-top: 170px;
+}
+
+/*GALLERY*/
+
+.gallery, .our-product, .content {
+    margin-top: 170px;
+}
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-three {
+/*    display: flex;
+    justify-content: space-between;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 390px);
+    column-gap: 95px;
+}
+
+.gallery-item {
+    display: inline-block;
+    max-width: 390px;
+}
+
+.gallery-three div:nth-child(2) {
+    margin-top: 200px;
+}
+
+.gallery-three p {
+    margin-top: 50px;
+}
+
+.gallery-three img {
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.gallery-item {
+
+}
+
+.gallery-item h3 {
+    position: relative;
+    left: 80px;
+}
+
+.gallery-item h3::before {
+    top: -80px;
+    left: -100px;
+    position: absolute;
+    content: attr(data-number);
+    font-family: Georgia;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 1em;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+/* STORY */
+
+.story {
+    align-items: center;
+    justify-content: center;
+}
+
+.story, .footer {
+    padding: 160px 0px; 
+    margin-top: 120px;
+    background-color: #245852;
+}
+
+/* OUR PRODUCT */
+
+.footer li {
+    margin-top: 60px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #fff;
+}
+
+.story-content, .story-video {
+    width: auto;
+}
+
+.align-items-c {
+    align-items: center;
+}
+
+.story-video {
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.story-video img {
+    display: block;
+    margin: 0 auto;
+}
+
+.story-content h2 {
+    color: #fff !important;
+}
+
+.story-content p {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.left-part {
+    position: relative;
+    margin-right: 90px;
+    padding-left: 60px;
+    padding-bottom: 74px;
+}
+
+.our-product-img-card {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer img {
+    min-width: auto;
+}
+
+/* FOOTER */
+
+/*h1, h2[color="#01996D"]{
+    color: red !important;
+}*/
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-style: 0;
+}
+
+/*Grid*/
+
+.container {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-wide {
+    width: 1540px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.left, .right, .left-part, .right-part {
+    max-width: 48%;
+}
+
+.menu-active {
+    display: none !important;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.menu-active-buttons > * + *{
+    margin-left: 30px;
+}
+
+.menu-active li {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.menu-active.active {
+    display: flex !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
